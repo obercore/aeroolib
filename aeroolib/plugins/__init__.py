@@ -43,7 +43,6 @@ for name in plugins:
     try:
         __import__('aeroolib.plugins.%s' % name)
         except Exception as e:
-#    except Exception, e:
         tb_file = StringIO()
 
         print >> tb_file, ("Unable to load plugin '%s', you will not be able "
